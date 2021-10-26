@@ -23,15 +23,48 @@ function init(){
 }
 
 function addDepartment(){
-    //...
+    inquirer.prompt([
+        {
+            type:'input',
+            message:'what is the name of the department?',
+            name:'newDepartment'
+        }
+    ])
 }
 
 function addEmployee(){
-    //...
+    inquirer.prompt([
+        {
+            type:'input',
+            message:'what is the employees first name?',
+            name:'firstName'
+        },
+        {
+            type:'input',
+            message:'what is the employees last name?',
+            name:'lastName'
+        },
+        {
+            type:'input',
+            message:'what is the employees role?',
+            name:'employeeRole'
+        },
+        {
+            type:'input',
+            message:'who is the employees manager (manager id)?',
+            name:'manager'
+        },
+    ])
 }
 
 function addRole(){
-    //...
+    inquirer.prompt([
+        {
+            type:'input',
+            message:'what is the name of the new role?',
+            name:'new role'
+        },
+    ])
 }
 
 function viewEmployees(){
@@ -47,7 +80,13 @@ function viewDepartments(){
 }
 
 function updateEmployeeRole(){
-    //...
+    inquirer.prompt([
+        {
+            type:'input',
+            message: 'which employee would you like to update (employee id)?',
+            name:'employeeUpdate'
+        },
+    ])
 }
 
 init()
